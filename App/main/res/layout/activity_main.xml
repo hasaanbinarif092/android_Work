@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#484D53"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/editText20"
+        app:layout_constraintStart_toStartOf="@+id/editText20"
+        app:layout_constraintTop_toBottomOf="@+id/editText15" />
+
+    <EditText
+        android:id="@+id/editText20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/editText21"
+        app:layout_constraintEnd_toEndOf="@+id/editText19"
+        app:layout_constraintStart_toStartOf="@+id/editText19"
+        app:layout_constraintTop_toBottomOf="@+id/editText15" />
+
+    <EditText
+        android:id="@+id/editText21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/editText22"
+        app:layout_constraintEnd_toEndOf="@+id/editText22"
+        app:layout_constraintStart_toStartOf="@+id/editText22"
+        app:layout_constraintTop_toBottomOf="@+id/editText20" />
+
+    <EditText
+        android:id="@+id/editText19"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Retype Password"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/editText21"
+        app:layout_constraintStart_toStartOf="@+id/editText21"
+        app:layout_constraintTop_toBottomOf="@+id/editText20" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="95dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="16dp"
+        android:text="Sign up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/editText15"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:text="This app is created by Bilal Akbar"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/editText15"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/editText15"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint="Usename"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/editText20"
+        app:layout_constraintEnd_toEndOf="@+id/editText18"
+        app:layout_constraintStart_toStartOf="@+id/editText18"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/editText22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText21" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:text="Terms and Conditions"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/editText22"
+        app:layout_constraintTop_toBottomOf="@+id/editText22" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:onClick="btnClick"
+        android:text="Register"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/Close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="InvalidId,MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
